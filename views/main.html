@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+        <script src="js/js/jquery-1.9.1.js"></script>
+        <script src="js/js/jquery-ui-1.10.2.custom.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+    </head>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#selectable").selectable({
+                stop: function () {
+                    $(".ui-selected", this).each(function () {
+                        var index = $("#selectable li").index(this);
+                        var url;
+                        if (index == 0)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 1)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 2)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 3)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 4)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 5)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 6)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 7)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 8)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+						else if (index == 9)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        else if (index == 10)
+                            url = "http://mncompute.zapto.org/PrintOnline/GetEstPriceSmart.asp";
+                        // window.parent.window.location.href = url;
+                        window.location.href = url;
+                    });
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+        span.reference{
+            position: fixed;
+            left:5px;
+            top:5px;
+            font-size:10px;
+            text-shadow:1px 1px 1px #fff;
+        }
+        span.reference a{
+            color:#555;
+            text-decoration:none;
+            text-transform:uppercase;
+        }
+        span.reference a:hover{
+            color:#000;
+        
+        }
+        h1{
+            color:#ccc;
+            font-size:36px;
+            text-shadow:1px 1px 1px #fff;
+            padding:20px;
+        }
+        #feedback { font-size: 1.4em; }
+        #selectable .ui-selecting { background: #0099CC; }
+        #selectable .ui-selected { background: #0066CC; color: white; }
+        #selectable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+        #selectable li { margin-top: 5px; margin-left: 5px; padding-top: 5px; float: left; width: 130px; height: 140px; font-size: 18px; text-align: center; }
+        #selectable li:hover{
+            background: #0099CC;
+        }
+    </style>
+    <body>
+        <div id="content">
+            <div id="wrapper">
+                <div id="steps">
+                    <form id="formElem" name="formElem">
+                        <fieldset class="step">
+                            <legend>Quick Quote</legend>
+                            <div align="center">
+                                <ol id="selectable" style="margin-left: 30px;">
+                                    <li class="ui-state-default" value="s">
+                                        <img src="images/icon_leaflet.gif" width="80" height="80" />
+                                        ใบปลิว
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_catalogue.gif" width="80" height="80" />
+                                        หนังสือ
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_caledar.gif" width="80" height="80" /></br>
+                                        ปฏิทิน
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_file.gif" width="80" height="80" /></br>
+                                        แฟ้มกระดาษ
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_box.gif" width="80" height="80" /></br>
+                                        กล่องกระดาษ
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_note.gif" width="80" height="80" /></br>
+                                        สมุดโน๊ต
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_book2.gif" width="80" height="80" /></br>
+                                        กระดาษโน๊ต
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_stricker.gif" width="80" height="80" /></br>
+                                        สติกเกอร์
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_bill.png" width="80" height="80" /></br>
+                                        บิลใบเสร็จ
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_poster.png" width="80" height="80" /></br>
+                                        โปสเตอร์
+                                    </li>
+                                    <li class="ui-state-default">
+                                        <img src="images/icon_cd.gif" width="80" height="80" /></br>
+                                        CD
+                                    </li>
+                                </ol>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
